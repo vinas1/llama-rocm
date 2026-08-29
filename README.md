@@ -1,5 +1,9 @@
 # llama-rocm (Strix Halo / gfx1151)
 
+<img width="1408" height="768" alt="image" src="https://github.com/user-attachments/assets/d7b7529e-fbbc-47fa-8f61-055276ffb460" />
+
+
+
 Native `llama.cpp` build optimized for AMD Strix Halo APUs (`gfx1151`), bringing ROCm acceleration and feature parity on Linux to NVIDIA CUDA and Apple Silicon setups.
 
 ---
