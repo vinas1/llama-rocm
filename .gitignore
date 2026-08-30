@@ -1,0 +1,10 @@
+# Build artifacts
+build/
+llama.cpp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local config
+.env
