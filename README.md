@@ -4,7 +4,7 @@
 
 
 
-Native `llama.cpp` build optimized for AMD Strix Halo APUs (`gfx1151`), bringing ROCm acceleration and feature parity on Linux to NVIDIA CUDA and Apple Silicon setups.
+Native `llama.cpp` build optimized for AMD Strix Halo APUs (`gfx1151`), bringing ROCm acceleration and feature parity on Linux to NVIDIA CUDA and Apple Silicon setups in LM Studio via a custom llama.cpp engine.
 
 ---
 
