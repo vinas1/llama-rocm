@@ -1,10 +1,164 @@
-# Build artifacts
-build/
-llama.cpp/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Local config
+# ==========================================
+# Security & Secrets
+# ==========================================
+secrets.yaml
+**/secrets.yaml
 .env
+.env.*
+!.env.example
+*.env.signed
+
+# ==========================================
+# Operating Systems (macOS, Windows, Linux)
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Icon_
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux / Desktop
+.directory
+
+# Global / Editor Temp Files
+*~
+*.sw?
+*.swp
+*.swo
+
+# ==========================================
+# Node.js & React
+# ==========================================
+node_modules/
+.pnp
+.pnp.js
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build and distribution directories
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# Caches & Tooling Output
+.cache/
+.vite/
+.parcel-cache/
+.turbo/
+.npm/
+.eslintcache
+.stylelintcache
+
+# Lockfile options (Uncomment the ones you do NOT want to track)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ==========================================
+# Python
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Pytest / Coverage / Testing outputs
+coverage/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.nox/
+.hypothesis/
+
+# Jupyter Notebooks & Caches
+.ipynb_checkpoints
+
+# Type Checkers & Linters
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ==========================================
+# AI Tools & Extensions (Cline, Roo, etc.)
+# ==========================================
+.cline/
+.clinerules
+.roomodes
+*.cline
+
+# ==========================================
+# Editors & IDEs
+# ==========================================
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, IntelliJ, etc.)
+.idea/
+
+# Visual Studio / .NET Projects
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# General Eclipse / Java IDE legacy
+.project
+.classpath
+.settings/
+
+# Misc
+*.local
