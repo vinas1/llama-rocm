@@ -7,7 +7,7 @@
 [![Hardware](https://img.shields.io/badge/Hardware-AMD%20ROCm%20Enabled-blue?style=for-the-badge)](https://rocm.amd.com/)
 [![License](https://img.shields.io/github/license/vinas1/llama-rocm?style=for-the-badge)](https://github.com/vinas1/llama-rocm/blob/main/LICENSE)
 
-Eliminate "ROCm dependency hell" with a stable, dependency-optimized configuration designed for running LLMs locally on AMD Radeon RX 7900 series and related ROCm-supported GPUs. This repository delivers the precise build targets and environment overrides needed to achieve CUDA-like stability on AMD hardware.
+Eliminate "ROCm dependency hell" with a stable, dependency-optimized configuration designed for running LLMs locally on AMD ROCm-supported GPUs like RDNA 3 and gfx1151 on the AMD Ryzen AI Max+ 395 Strix Halo. This repository delivers the precise build targets and environment overrides needed to achieve CUDA-like stability on AMD hardware.
 
 ## 🛠 Compatibility Matrix
 
@@ -15,7 +15,7 @@ Eliminate "ROCm dependency hell" with a stable, dependency-optimized configurati
 | :--- | :--- |
 | **OS** | Linux / Ubuntu (Native Bare-Metal & WSL2) |
 | **Platform** | AMD ROCm (Verified up to recent stable releases) |
-| **Hardware** | Radeon RX 7900 GRE and identical architectures (RDNA 3 / gfx1151) |
+| **Hardware** | AMD Ryzen AI Max+ 395 (RDNA 3 / gfx1151) and identical architectures |
 
 ## 🚀 Quick Start
 
@@ -37,7 +37,7 @@ chmod +x scripts/lmstudio_start.sh && ./scripts/lmstudio_start.sh
 ## 📦 Installation & Usage
 
 ### Option 1: Pre-built Binary (Rex Systems)
-For Rex systems, a pre-built binary is available: `llama-rocm-gfx1151-linux-x64.tar.gz`.
+For Rex systems, a pre-built binary is available: [llama-rocm-gfx1151-linux-x64.tar.gz](https://github.com/vinas1/llama-rocm/tree/main/binaries/).
 
 ```bash
 mkdir -p ~/build/llama.cpp/build/bin/
