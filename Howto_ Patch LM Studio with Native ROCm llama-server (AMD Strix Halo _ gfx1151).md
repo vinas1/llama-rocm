@@ -62,11 +62,11 @@ export AMD_SERIALIZE_KERNEL=3
 
 To ensure LM Studio updates do not overwrite your patch, use a wrapper startup script (\~/lmstudio\_start.sh). It compares your native binary with LM Studio's vendor binary on launch and automatically re-applies the patch if an update occurred.
 
-Create or update /home/jld/lmstudio\_start.sh:
+Create or update /home/$USER/lmstudio\_start.sh:
 
 ```shell
 #!/bin/bash
-LMS_CLI="/home/jld/.lmstudio/bin/lms"
+LMS_CLI="/home/$USER/.lmstudio/bin/lms"
 
 # ===================================================================
 # 0. Hardware Overrides & Auto-Patching for Strix Halo (gfx1151)
@@ -77,10 +77,10 @@ export HSA_ENABLE_SDMA=0
 export AMD_SERIALIZE_KERNEL=3
 
 # Path to your custom-built native binary
-NATIVE_BINARY="/home/jld/build/llama.cpp/build/bin/llama-server"
+NATIVE_BINARY="/home/$USER/build/llama.cpp/build/bin/llama-server"
 
 # Find LM Studio's active vendor backend directory
-VENDOR_DIR=$(ls -d /home/jld/.lmstudio/extensions/backends/vendor/linux-llama-rocm-vendor-* 2>/dev/null | tail -n 1)
+VENDOR_DIR=$(ls -d /home/$USER/.lmstudio/extensions/backends/vendor/linux-llama-rocm-vendor-* 2>/dev/null | tail -n 1)
 
 if [ -n "$VENDOR_DIR" ] && [ -f "$NATIVE_BINARY" ]; then
     # Check if LM Studio's binary needs to be patched/updated
