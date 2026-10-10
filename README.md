@@ -9,6 +9,8 @@
 
 Eliminate "ROCm dependency hell" with a stable, dependency-optimized configuration designed for running LLMs locally on AMD ROCm-supported GPUs like RDNA 3 and gfx1151 on the AMD Ryzen AI Max+ 395 Strix Halo. This repository delivers the precise build targets and environment overrides needed to achieve CUDA-like stability on AMD hardware.
 
+Newer versions of the bundled llama.cpp no longer require the customizations described here, though native builds can still squeeze additional performance! [See this issue which explains how our little project contributed](https://github.com/vinas1/llama-rocm/issues/1) to a better LM Studio and llama.cpp, now bundled with the product. Very nice!
+
 ## 🛠 Compatibility Matrix
 
 | Component | Supported Baseline |
