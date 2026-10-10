@@ -7,7 +7,7 @@
 [![Hardware](https://img.shields.io/badge/Hardware-AMD%20ROCm%20Enabled-blue?style=for-the-badge)](https://rocm.amd.com/)
 [![License](https://img.shields.io/github/license/vinas1/llama-rocm?style=for-the-badge)](https://github.com/vinas1/llama-rocm/blob/main/LICENSE)
 
-> Unlock peak ROCm performance with a stable, dependency-optimized llama.cpp configuration engineered for local LLM inference on AMD hardware, including RDNA 3 and the `gfx1151` architecture on the AMD Ryzen AI Max+ 395 Strix Halo. This repository provides precise build targets and environment tuning designed to deliver CUDA-like stability on AMD platforms.
+> Unlock peak ROCm performance with a stable, dependency-optimized llama.cpp configuration engineered for local LLM inference on AMD hardware, including RDNA 3 and the `gfx1151` architecture on the AMD Ryzen AI Max systems (including 395 and 495 Strix Halo). This repository provides precise build targets and environment tuning designed to deliver CUDA-like stability on AMD platforms.
 
 > *Note: Newer versions of LM Studio and bundled llama.cpp now include native upstream support for these architectures. [This tracking issue highlights how our project's initial discovery and tooling contributed directly to those native fixes.](https://github.com/vinas1/llama-rocm/issues/1) Custom builds remain fully supported for users looking to push maximum performance!*
 
